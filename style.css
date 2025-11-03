@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Impact", "Arial Black", sans-serif;
+  background: linear-gradient(270deg, #002b5b, #0055aa, #00aaff, #0077cc);
+  background-size: 600% 600%;
+  animation: melt 5s ease-in-out infinite alternate;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text y="20" font-size="20">🧜‍♀️</text></svg>'), auto;
+}
+
+@keyframes melt {
+  0% {background-position: 0% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+
+#title {
+  text-align: center;
+  font-size: 4em;
+  color: orange;
+  text-shadow: 4px 4px red, 0 0 20px pink;
+  margin-top: 80px;
+  letter-spacing: 5px;
+}
+
+.fish {
+  position: absolute;
+  font-size: 2em;
+  text-decoration: none;
+  animation: swim 10s linear infinite;
+}
+
+@keyframes swim {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(10px);}
+}
+
+#instruments {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
